@@ -1,0 +1,40 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 54px;
+  width: 100%;
+  background-color: variables.$primary-color;
+}
+
+.header-left {
+  display: flex;
+  gap: 100px;
+  margin-left: variables.$main-padding;
+}
+.header-left input {
+  background-color: variables.$primary-color;
+  border: none;
+  color: rgba(137, 137, 137, 1);
+}
+.header-left input:focus {
+  outline: none;
+}
+
+.header-left div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  @include mixins.paragraph-header-aside();
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: variables.$main-gap;
+  margin-right: variables.$main-padding;
+}

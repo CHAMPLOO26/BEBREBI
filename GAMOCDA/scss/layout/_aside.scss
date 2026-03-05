@@ -1,0 +1,28 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+.aside {
+  width: 248px;
+  height: 935px;
+  background-color: variables.$primary-color;
+}
+
+.aside-container {
+  position: fixed;
+  top: 50px;
+  padding-top: 30px;
+  padding-left: 25px;
+}
+.aside-container div {
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: variables.$main-gap;
+  @include mixins.paragraph-header-aside();
+}
+.aside-arrow-right-icon1 {
+  margin-left: 84px;
+}
+
+.aside-arrow-right-icon2 {
+  margin-left: 60px;
+}
