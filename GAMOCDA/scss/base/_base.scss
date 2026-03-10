@@ -1,9 +1,14 @@
 .web {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
+}
+
+.body {
+  background: linear-gradient(
+    to top,
+    rgba(6, 6, 6, 1) 50%,
+    rgba(165, 96, 42, 1)
+  );
+  min-height: 100vh;
 }
 
 @media (max-width: 768px) {
