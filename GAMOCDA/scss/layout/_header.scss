@@ -32,12 +32,20 @@
 .header-left input:focus {
   outline: none;
 }
+.header-left input:hover {
+  background-color: variables.$primary-hover-color;
+}
 
 .header-left div {
   display: flex;
+  width: 210px;
   align-items: center;
   gap: 10px;
   @include mixins.paragraph-header-aside();
+}
+.header-left div:hover {
+  background-color: variables.$primary-hover-color;
+  border-radius: 4px;
 }
 
 .header-right {
@@ -64,13 +72,14 @@
   }
   .header-left {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     align-items: center;
     padding-left: 10px;
     .people-icon {
       display: inline;
       text-align: center;
     }
+
     .people-icon:last-child {
       display: inline;
       p {
@@ -91,5 +100,9 @@
 
   .header-left input {
     display: none;
+  }
+
+  .header-left div {
+    width: 40.41px;
   }
 }

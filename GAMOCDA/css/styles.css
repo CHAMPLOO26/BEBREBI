@@ -72,8 +72,13 @@ button {
   outline: none;
 }
 
+.header-left input:hover {
+  background-color: rgba(32, 32, 32, 0.5);
+}
+
 .header-left div {
   display: flex;
+  width: 210px;
   align-items: center;
   gap: 10px;
   color: rgb(137, 137, 137);
@@ -81,6 +86,11 @@ button {
   font-size: 14px;
   line-height: 100%;
   letter-spacing: 3%;
+}
+
+.header-left div:hover {
+  background-color: rgba(32, 32, 32, 0.5);
+  border-radius: 4px;
 }
 
 .header-right {
@@ -103,7 +113,7 @@ button {
   }
   .header-left {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     align-items: center;
     padding-left: 10px;
   }
@@ -130,6 +140,9 @@ button {
   .header-left input {
     display: none;
   }
+  .header-left div {
+    width: 40.41px;
+  }
 }
 .aside {
   position: fixed;
@@ -148,12 +161,19 @@ button {
   padding-bottom: 30px;
   display: flex;
   align-items: center;
+  padding-left: 20px;
+  padding-top: 20px;
   gap: 20px;
   color: rgb(137, 137, 137);
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
   letter-spacing: 3%;
+}
+
+.aside-container div:hover {
+  background-color: rgba(32, 32, 32, 0.5);
+  border-radius: 10px;
 }
 
 .aside-arrow-right-icon1 {
