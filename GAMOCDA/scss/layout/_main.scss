@@ -7,8 +7,8 @@
   flex-direction: column;
   background: linear-gradient(
     to top,
-    rgba(6, 6, 6, 1) 50%,
-    rgba(165, 96, 42, 1)
+    variables.$primary-color 50%,
+    variables.$main-bacground-color
   );
   padding-top: 75px;
   border-left: 1px solid rgba(32, 32, 32, 1);
@@ -26,8 +26,8 @@
   .follow-button {
     width: 82px;
     height: 39px;
-    border-radius: 44px;
-    border: 2px solid rgba(137, 137, 137);
+    border-radius: variables.$primary-border-radius;
+    border: variables.$primary-border-size solid rgba(137, 137, 137);
     background-color: rgba(137, 137, 137);
     color: rgba(224, 224, 224, 1);
   }
@@ -44,8 +44,8 @@
     gap: 10px;
     width: 133px;
     height: 44px;
-    border-radius: 44px;
-    border: 2px solid rgba(137, 137, 137);
+    border-radius: variables.$primary-border-radius;
+    border: variables.$primary-border-size solid rgba(137, 137, 137);
     background-color: none;
     color: rgba(224, 224, 224, 1);
   }
@@ -106,8 +106,8 @@
   button {
     width: 95px;
     height: 39px;
-    border-radius: 44px;
-    border: 2px solid variables.$player-bar-color;
+    border-radius: variables.$primary-border-radius;
+    border: variables.$primary-border-size solid variables.$player-bar-color;
     color: variables.$player-bar-color;
   }
   img {
