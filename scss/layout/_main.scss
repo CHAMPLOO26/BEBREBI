@@ -1,0 +1,69 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.main-section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    to top,
+    variables.$primary-color 50%,
+    variables.$main-bacground-color
+  );
+  padding-top: 75px;
+  border-left: 1px solid rgba(32, 32, 32, 1);
+  padding-right: 40px;
+  padding-left: 50px;
+  margin-left: 248px;
+  color: rgba(224, 224, 224, 1);
+}
+.main-section-top {
+  width: 472px;
+  h1 {
+    margin-bottom: variables.$main-margin;
+  }
+  span {
+    color: variables.$player-bar-color;
+  }
+  div {
+    margin-bottom: 10px;
+  }
+  .episode-details {
+    display: flex;
+  }
+}
+
+.episode-bottom-icons {
+  display: flex;
+  align-items: center;
+  gap: variables.$main-gap;
+}
+
+.about-container {
+  position: absolute;
+  width: 320px;
+  top: 0;
+  left: 1350px;
+  margin-top: 70px;
+  z-index: 1;
+  button {
+    width: 95px;
+    height: 39px;
+    border-radius: variables.$primary-border-radius;
+    border: variables.$primary-border-size solid variables.$player-bar-color;
+    color: variables.$player-bar-color;
+  }
+  img {
+    padding-bottom: 10px;
+  }
+  P {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: variables.$player-bar-color;
+  }
+}
+
+.youtube-video {
+  width: 969px;
+  height: 546px;
+}
