@@ -5,11 +5,6 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(
-    to top,
-    variables.$primary-color 50%,
-    variables.$main-bacground-color
-  );
   padding-top: 75px;
   border-left: 1px solid rgba(32, 32, 32, 1);
   padding-right: 40px;
@@ -18,52 +13,97 @@
   color: rgba(224, 224, 224, 1);
 }
 .main-section-top {
-  width: 472px;
-  h1 {
-    margin-bottom: variables.$main-margin;
+  width: 100%;
+  height: 59px;
+  position: fixed;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  top: 53px;
+  left: 248px;
+  padding-left: 20px;
+  background-color: rgba(6, 6, 6, 0.8);
+  .music {
+    width: 68px;
+    @include mixins.primary-button();
+  }
+  .edm {
+    width: 61px;
+    @include mixins.primary-button();
+  }
+  .indie {
+    width: 62px;
+    @include mixins.primary-button();
+  }
+  .pop {
+    width: 56px;
+    @include mixins.primary-button();
+  }
+  .rock {
+    width: 62px;
+    @include mixins.primary-button();
+  }
+  .alt-rock {
+    width: 84px;
+    @include mixins.primary-button();
+  }
+  .country {
+    width: 82px;
+    @include mixins.primary-button();
+  }
+  .r-b {
+    width: 56px;
+    @include mixins.primary-button();
+  }
+  .hip-hop {
+    width: 86px;
+    @include mixins.primary-button();
+  }
+  .podcast {
+    width: 82px;
+    @include mixins.primary-button();
+  }
+  .audiobooks {
+    width: 107px;
+    @include mixins.primary-button();
+  }
+  .button:hover {
+    background-color: variables.$primary-text-color;
+    color: variables.$primary-color;
+  }
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  padding-left: 150px;
+  margin-top: 120px;
+  gap: 50px;
+  height: 612px;
+  .album-card {
+    display: flex;
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+  div {
+    gap: 20px;
+    padding-bottom: 20px;
   }
   span {
     color: variables.$player-bar-color;
   }
-  div {
-    margin-bottom: 10px;
-  }
-  .episode-details {
-    display: flex;
-  }
-}
-
-.episode-bottom-icons {
-  display: flex;
-  align-items: center;
-  gap: variables.$main-gap;
-}
-
-.about-container {
-  position: absolute;
-  width: 320px;
-  top: 0;
-  left: 1350px;
-  margin-top: 70px;
-  z-index: 1;
   button {
-    width: 95px;
-    height: 39px;
-    border-radius: variables.$primary-border-radius;
-    border: variables.$primary-border-size solid variables.$player-bar-color;
-    color: variables.$player-bar-color;
-  }
-  img {
-    padding-bottom: 10px;
-  }
-  P {
-    padding-bottom: 20px;
-    padding-top: 20px;
+    width: 72px;
+    height: 32px;
+    border-radius: 44px;
+    border: 2px solid variables.$player-bar-color;
     color: variables.$player-bar-color;
   }
 }
 
-.youtube-video {
-  width: 969px;
-  height: 546px;
+.content-container-2 {
+  margin-bottom: 100px;
 }
