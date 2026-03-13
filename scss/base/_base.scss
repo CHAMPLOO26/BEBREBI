@@ -1,14 +1,7 @@
-.web {
-  height: 100%;
-}
+@use "../abstracts/variables";
 
 .body {
-  background-image: linear-gradient(
-    180deg,
-    #1c352d 35%,
-
-    #5c1a12 100%
-  );
+  background-color: variables.$primary-color;
 }
 
 @media (max-width: 768px) {

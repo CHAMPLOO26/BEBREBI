@@ -9,7 +9,7 @@
   border-left: 1px solid rgba(32, 32, 32, 1);
   padding-right: 40px;
   padding-left: 50px;
-  margin-left: 248px;
+  margin-left: 252px;
   color: rgba(224, 224, 224, 1);
 }
 .main-section-top {
@@ -19,91 +19,56 @@
   display: flex;
   gap: 15px;
   align-items: center;
+  justify-content: space-between;
   top: 53px;
   left: 248px;
   padding-left: 20px;
-  background-color: rgba(6, 6, 6, 0.8);
-  .music {
-    width: 68px;
-    @include mixins.primary-button();
-  }
-  .edm {
-    width: 61px;
-    @include mixins.primary-button();
-  }
-  .indie {
-    width: 62px;
-    @include mixins.primary-button();
-  }
-  .pop {
-    width: 56px;
-    @include mixins.primary-button();
-  }
-  .rock {
-    width: 62px;
-    @include mixins.primary-button();
-  }
-  .alt-rock {
-    width: 84px;
-    @include mixins.primary-button();
-  }
-  .country {
-    width: 82px;
-    @include mixins.primary-button();
-  }
-  .r-b {
-    width: 56px;
-    @include mixins.primary-button();
-  }
-  .hip-hop {
-    width: 86px;
-    @include mixins.primary-button();
-  }
-  .podcast {
-    width: 82px;
-    @include mixins.primary-button();
-  }
-  .audiobooks {
-    width: 107px;
-    @include mixins.primary-button();
-  }
-  .button:hover {
-    background-color: variables.$primary-text-color;
-    color: variables.$primary-color;
-  }
+  padding-right: 270px;
 }
 
-.content-container {
+.main-section-top-right {
   display: flex;
   align-items: center;
-  padding-left: 150px;
-  margin-top: 120px;
-  gap: 50px;
-  height: 612px;
-  .album-card {
-    display: flex;
-  }
-
-  .icons {
-    display: flex;
-    align-items: center;
-  }
-  div {
-    gap: 20px;
-    padding-bottom: 20px;
-  }
-  span {
-    color: variables.$player-bar-color;
-  }
-  button {
-    width: 72px;
-    height: 32px;
-    border-radius: 44px;
-    border: 2px solid variables.$player-bar-color;
+  gap: 20px;
+  p {
     color: variables.$player-bar-color;
   }
 }
 
-.content-container-2 {
-  margin-bottom: 100px;
+.music-list-top {
+  display: flex;
+  margin-top: 70px;
+  gap: 10px;
+  border-bottom: 0.5px solid variables.$player-bar-color;
+  color: variables.$player-bar-color;
+  padding-bottom: 10px;
+  div {
+    display: flex;
+    gap: 250px;
+  }
+}
+
+.list-part {
+  display: flex;
+  align-items: center;
+  gap: 140px;
+  margin-top: 20px;
+  p {
+    color: variables.$player-bar-color;
+  }
+  span {
+    color: variables.$primary-text-color;
+  }
+}
+.list-part-img {
+  display: flex;
+  align-items: center;
+  img {
+    margin-left: 15px;
+  }
+}
+.list-part-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }

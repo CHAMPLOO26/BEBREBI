@@ -4,6 +4,7 @@
 .header {
   position: fixed;
   display: flex;
+  left: 248px;
   justify-content: space-between;
   align-items: center;
   height: 54px;
@@ -53,57 +54,5 @@
   display: flex;
   align-items: center;
   gap: variables.$main-gap;
-  margin-right: variables.$main-padding;
+  margin-right: 260px;
 }
-
-// @media (max-width: 768px) {
-//   .header {
-//     position: fixed;
-//     bottom: 0;
-//     display: flex;
-//     align-items: center;
-//     text-align: center;
-//     width: 410px;
-//     height: 95px;
-//     background: linear-gradient(
-//       to top,
-//       rgba(6, 6, 6, 1) 50%,
-//       rgba(17, 17, 17, 0)
-//     );
-//   }
-//   .header-left {
-//     display: flex;
-//     gap: 40px;
-//     align-items: center;
-//     padding-left: 10px;
-//     .people-icon {
-//       display: inline;
-//       text-align: center;
-//     }
-
-//     .people-icon:last-child {
-//       display: inline;
-//       p {
-//         position: relative;
-//         top: 8px;
-//       }
-//     }
-//     span {
-//       display: none;
-//     }
-//     .search {
-//       display: inline;
-//     }
-//   }
-//   .header-right {
-//     display: none;
-//   }
-
-//   .header-left input {
-//     display: none;
-//   }
-
-//   .header-left div {
-//     width: 40.41px;
-//   }
-// }
